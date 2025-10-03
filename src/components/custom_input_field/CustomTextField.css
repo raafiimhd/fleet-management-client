@@ -1,0 +1,69 @@
+/* Container default vertical layout */
+.custom-textfield {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  
+}
+.title-field {
+ align-items: start;
+ flex-direction: column;
+}
+/* Horizontal layout (label + input in a row) */
+.custom-textfield.is-below {
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+/* Label styling */
+.custom-textfield label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+  min-width: 100px; /* optional */
+}
+
+/* Input & textarea styling (Tailwind-like) */
+.custom-textfield input,
+.custom-textfield textarea {
+  flex: 1;
+  padding: 16px 24px;          /* px-6 py-4 */
+  font-size: 18px;             /* text-lg */
+  border: 1px solid #e5e7eb;   /* border-gray-200 */
+  border-radius: 24px;          /* rounded-2xl */
+  outline: none;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: all 0.2s;
+  color: #111827;
+}
+
+/* Placeholder */
+.custom-textfield input::placeholder,
+.custom-textfield textarea::placeholder {
+  color: #9ca3af; /* placeholder-gray-400 */
+}
+
+/* Focus state (Tailwind ring effect) */
+.custom-textfield input:focus,
+.custom-textfield textarea:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* focus:ring-2 focus:ring-blue-500 */
+}
+
+/* Error message */
+.custom-textfield .error {
+  font-size: 12px;
+  color: #ef4444;
+}
+
+/* Color input */
+.custom-textfield input[type="color"] {
+  width: 48px;
+  height: 32px;
+  padding: 0;
+  cursor: pointer;
+}
