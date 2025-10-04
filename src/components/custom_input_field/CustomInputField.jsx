@@ -59,7 +59,7 @@ const CustomTextField = ({
     );
   };
 
-  const containerClass = "title-field";
+  const containerClass = "custom-textfield ";
 
   return (
     <div className={containerClass} style={{ maxWidth: mWidth }}>

@@ -12,7 +12,14 @@
   max-width: 400px;
   padding: 32px;
 }
-
+.signin-card {
+  background: white;
+  padding: 60px 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 520px;
+}
 .signin-title {
   font-size: 2.5rem; /* text-5xl */
   font-weight: 600;
@@ -56,3 +63,41 @@
   cursor: pointer;
   text-decoration: underline;
 }
+.create-account-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.create-account-container p {
+  font-size: 14px;
+  color: #6b7280; /* gray-500 */
+  margin-bottom: 8px;
+}
+
+.create-account-button {
+  background-color: #2563eb; /* blue-600 */
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border: 2px solid #2563eb; /* keeps border visible on hover */
+}
+
+.create-account-button:hover {
+  background-color: #ffffff; /* white background on hover */
+  color: #2563eb;            /* text turns blue */
+  border: 2px solid #2563eb; /* keeps blue border */
+}
+.error-text {
+  color: #ef4444; /* red-500 */
+  font-size: 13px;
+  margin-top: -4px;
+  margin-bottom: 8px;
+}
+
